@@ -1,7 +1,6 @@
 package ikea.imc.pam.demo.component.test.dockerized;
 
 import com.github.tomakehurst.wiremock.client.WireMock;
-import jakarta.annotation.PostConstruct;
 import org.junit.jupiter.api.BeforeEach;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -11,7 +10,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.testcontainers.containers.DockerComposeContainer;
 import org.testcontainers.containers.wait.strategy.Wait;
 
+import javax.annotation.PostConstruct;
 import java.io.File;
+
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 @ContextConfiguration(classes = AbstractBaseTest.TestConfig.class)

@@ -14,4 +14,4 @@ WORKDIR /application
 
 COPY /application/target /application
 
-ENTRYPOINT java -jar -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=$SUSPENDED_BOOT_ENV,address=*:$DEBUG_PORT_ENV /budget-service/pam-budget-service-application-0.0.1-SNAPSHOT-exec.jar
+ENTRYPOINT java -jar -Xdebug -agentlib:jdwp=transport=dt_socket,server=y,suspend=$SUSPENDED_BOOT_ENV,address=*:$DEBUG_PORT_ENV /application/application-0.0.1-SNAPSHOT-exec.jar

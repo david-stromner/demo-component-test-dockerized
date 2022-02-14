@@ -29,6 +29,10 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<classifier>exec</classifier>
+					<mainClass>ikea.imc.pam.demo.component.test.dockerized.DemoComponentTestDockerizedApplication</mainClass>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
