@@ -1,0 +1,20 @@
+version: "3.9"
+services:
+    demo-component-test-dockerized-application:
+        build:
+            context: .
+            dockerfile: Dockerfile
+            args:
+                - SUSPENDED_BOOT=n
+                - DEBUG_PORT=5006
+        privileged: true
+        restart: unless-stopped
+        ports:
+            - "23000:8080" # Default application port
+            - "5006:5006" # Debug port
+        healthcheck:
+            test: "curl --fail --silent localhost:8080/actuator/health | grep UP || exit 1"
+            interval: 20s
+            timeout: 5s
+            retries: 5
+            start_period: 40s
