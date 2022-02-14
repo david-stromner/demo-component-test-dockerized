@@ -5,6 +5,7 @@ we boot it up through the Testcontainers library. We use the Testcontainers libr
 lifecycles of our containers. Each component-test will boot up a container so tests can't taint the data for other tests.
 
 ###Tip for local
+
 Of course, booting up a Spring application for each test does take some time so to help in your local environment we have
 added a toggle for running the application containers on the side. That is, **you** are responsible for booting and killing
 the application
