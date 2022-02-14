@@ -10,7 +10,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>application</artifactId>
-    <name>Demo-Component-test-Dockerized::Application</name>
+    <name>Demo-Component-Test-Dockerized::Application</name>
 
     <dependencies>
         <dependency>

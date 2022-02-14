@@ -17,7 +17,7 @@
 	<groupId>ikea.imc.pam</groupId>
 	<artifactId>demo-component-test-dockerized</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Demo-Component-test-Dockerized::Parent</name>
+	<name>Demo-Component-Test-Dockerized::Parent</name>
 	<description>Demo for how to structure your project with application running in a Docker container</description>
 
 	<properties>
