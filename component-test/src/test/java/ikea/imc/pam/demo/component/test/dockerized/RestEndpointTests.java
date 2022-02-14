@@ -1,13 +1,13 @@
 package ikea.imc.pam.demo.component.test.dockerized;
 
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class RestEndpointTests extends AbstractBaseTest{
+    @Autowired RestClient restClient;
 
     @Test
     void testMe(){
-        assertTrue(true);
+        restClient.getStatus();
     }
 }
