@@ -22,7 +22,7 @@ public class RestClient {
     private final String applicationEndpoint;
 
     public RestClient(
-            @Value("${ikea.imc.pam.url:}") String applicationEndpoint,
+            @Value("${ikea.imc.pam.url}") String applicationEndpoint,
             @Value("${ikea.imc.pam.timeout:3000}") int applicationTimeout) {
         this.applicationEndpoint = applicationEndpoint;
 
